@@ -1,0 +1,11 @@
+#! /bin/bash -f
+
+# script for changing the keyboard layout
+
+if setxkbmap -print | grep "+us+" > /dev/null
+then
+        setxkbmap il
+else
+        setxkbmap us
+fi
+
