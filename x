@@ -2,6 +2,6 @@
 # basic initializations
 xmonad &
 xfce4-session &
-xmodmap .Xmodmap
+xmodmap ~/.Xmodmap
 emacs --daemon &
 keynav
