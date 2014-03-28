@@ -1,6 +1,8 @@
 #! /bin/sh
 # basic initializations
 xmodmap ~/.Xmodmap
-emacs --daemon &
 keynav
 xset r rate 220 160
+#openbox &
+#xfce4-session &
+
