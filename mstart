@@ -1,0 +1,17 @@
+#! /bin/sh
+
+sudo systemctl start mysqld
+
+~/installations/eclipse/eclipse &
+
+xfce4-terminal -e msshdb &
+
+ec
+
+xset r rate 160 100
+
+
+
+
+
+

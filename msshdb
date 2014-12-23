@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sudo ssh -i ~/.ssh/id_rsa_m ubuntu@madlan-db1.dyndns-web.com  -L444:localhost:443
