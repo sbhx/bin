@@ -1,0 +1,4 @@
+#! /bin/bash
+
+rlwrap ~/installations/clojurescript/script/noderepljs
+

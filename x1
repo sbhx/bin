@@ -5,4 +5,4 @@ keynav
 xset r rate 220 160
 #openbox &
 #xfce4-session &
-
+xfce4-power-manager
