@@ -1,9 +1,11 @@
 #! /bin/sh
 
+echo 524288 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
+
 sudo systemctl start mysqld
 sudo systemctl start sshd
 
-~/installations/eclipse/eclipse &
+eclipse &
 
 xfce4-terminal -e msshdb &
 
@@ -11,4 +13,3 @@ ec
 
 xset r rate 160 100
 
-echo 524288 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
