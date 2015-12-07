@@ -2,10 +2,10 @@
 
 echo 524288 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
 
+encfs ~/.enc/ ~/enc/ -- -o allow_other
+
 sudo systemctl start mysqld
 sudo systemctl start sshd
-
-eclipse &
 
 xfce4-terminal -e msshdb &
 
