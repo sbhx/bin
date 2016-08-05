@@ -1,0 +1,4 @@
+#! /bin/bash
+
+cat /etc/hosts | awk '$2==x {print $1}' x=$1
+
