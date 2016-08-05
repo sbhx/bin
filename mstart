@@ -7,9 +7,17 @@ encfs ~/.enc/ ~/enc/ -- -o allow_other
 sudo systemctl start mysqld
 sudo systemctl start sshd
 
-xfce4-terminal -e msshdb &
-
 ec
 
 xset r rate 160 100
+
+sudo tlp start
+sudo bluetooth off
+
+xfce4-terminal -e msshdb &
+
+sudo killall notify-osd
+LOG=1 /usr/lib/notify-osd-customizable/notify-osd &
+
+wingo --replace &
 
