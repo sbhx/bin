@@ -1,4 +1,4 @@
 #! /bin/bash
 # http://askubuntu.com/a/389553
 
-svn diff --diff-cmd=svn-diff-meld.sh
+svn diff --diff-cmd=svn-diff-meld.sh $@
