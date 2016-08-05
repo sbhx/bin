@@ -1,8 +1,12 @@
 #! /bin/sh
 # basic initializations
-xmodmap ~/.Xmodmap
+#xmodmap ~/.Xmodmap
 keynav
-xset r rate 220 160
-#openbox &
 #xfce4-session &
 xfce4-power-manager
+sleep 5
+wingo --replace &
+xrdb merge ~/.Xresources
+urxvt &
+xset r rate 220 160
+
