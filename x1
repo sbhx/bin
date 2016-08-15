@@ -10,3 +10,9 @@ xrdb merge ~/.Xresources
 urxvt &
 xset r rate 220 160
 
+sudo bluetooth off
+sudo tlp start
+
+sudo killall notify-osd
+LOG=1 /usr/lib/notify-osd-customizable/notify-osd &
+
