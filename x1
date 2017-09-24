@@ -1,18 +1,19 @@
 #! /bin/sh
 # basic initializations
 #xmodmap ~/.Xmodmap
+killall keynav
 keynav
 #xfce4-session &
-xfce4-power-manager
-sleep 5
+#_xfce4-power-manager
+#_sleep 5
 wingo --replace &
-xrdb merge ~/.Xresources
-urxvt &
+#_xrdb merge ~/.Xresources
+#_urxvt &
 xset r rate 220 160
 
-sudo bluetooth off
-sudo tlp start
+#sudo bluetooth off
+#sudo tlp start
 
-sudo killall notify-osd
-LOG=1 /usr/lib/notify-osd-customizable/notify-osd &
+#sudo killall notify-osd
+#LOG=1 /usr/lib/notify-osd-customizable/notify-osd &
 

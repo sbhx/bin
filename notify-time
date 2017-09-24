@@ -1,3 +1,4 @@
 #! /bin/sh
 
 notify-send "`date`"
+notify-send "`TZ=:US/Eastern date`"
