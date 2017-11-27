@@ -2,3 +2,5 @@
 
 notify-send "`date`"
 notify-send "`TZ=:US/Eastern date`"
+notify-send "`acpi`"
+
