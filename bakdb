@@ -1,0 +1,11 @@
+#! /bin/bash
+
+filename=~/dump/bak_$(date +"%Y%m%d_%H%M%S").sql.gz
+
+echo "creating "$filename" ..."
+echo "enter db passwd"
+
+xfce4-terminal -e 'watch ls -ltr ~/dump/bak*' &
+time pg_dump -d devdb -U devuser -h localhost | gzip > $filename
+
+echo "done creating "$filename" ."

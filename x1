@@ -6,10 +6,13 @@ keynav
 #xfce4-session &
 #_xfce4-power-manager
 #_sleep 5
-wingo --replace &
+#wingo --replace &
 #_xrdb merge ~/.Xresources
 #_urxvt &
 xset r rate 220 160
+
+slack &
+
 
 #sudo bluetooth off
 #sudo tlp start
@@ -17,3 +20,4 @@ xset r rate 220 160
 #sudo killall notify-osd
 #LOG=1 /usr/lib/notify-osd-customizable/notify-osd &
 
+unclutter -idle 5 & 
