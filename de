@@ -1,3 +1,9 @@
+
+echo "This will stop postgresql and run some docker stuff. Ctrl-D to begin."
+cat
+
+sudo systemctl stop postgresql
+
 cd /home/daslu/dev/deployment/development/
-sudo docker login
-sudo docker-compose up -d
+docker login
+docker-compose up -d
