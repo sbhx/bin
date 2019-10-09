@@ -1,6 +1,8 @@
 #! /bin/sh
 
-notify-send "`date`"
-notify-send "`TZ=:US/Eastern date`"
+for tz in Europe/Stockholm Europe/Helsinki Asia/Jerusalem UTC
+do
+	notify-send $tz":  `TZ="$tz" date`"
+done
 notify-send "`acpi`"
 

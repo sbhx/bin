@@ -1,6 +1,12 @@
 #! /bin/sh
 # basic initializations
 #xmodmap ~/.Xmodmap
+killall xfce4-panel
+
+i3 &
+
+sleep 2
+
 killall keynav
 keynav
 #xfce4-session &
@@ -21,3 +27,7 @@ slack &
 #LOG=1 /usr/lib/notify-osd-customizable/notify-osd &
 
 unclutter -idle 5 & 
+
+emacs --daemon 
+
+
